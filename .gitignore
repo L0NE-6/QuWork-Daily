@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+.quwork_state.json
+.env
+*.log
