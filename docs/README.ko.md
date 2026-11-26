@@ -6,7 +6,7 @@
 
 **QuWork 일일 보상 내부 POC: 상태 확인, 확인 원장 기록, claim, 재조회**
 
-> Version: **v0.1.0** (2026-11-12) · Status: `implemented_unverified`
+> Version: **v0.1.0** (스크립트 2026-11-12 · Release 2026-11-24) · Status: `implemented_unverified`
 
 [简体中文](../README.md) · [English](README.en.md) · [繁體中文](README.zh-Hant.md) · [日本語](README.ja.md) · **[한국어](README.ko.md)** · [Português (BR)](README.pt-BR.md)
 
@@ -39,7 +39,7 @@ QuWork Daily는 계정 소유자가 자신의 일일 보상을 관리하기 위�
 | **보호** | 첫 claim 전에 `confirming`을 저장하고 불확실한 결과는 재전송하지 않습니다. |
 | **출력** | `query`, `done`, `claimed`, `inactive`, `pending`, `failed`. |
 | **실행** | Windows, Linux, Qinglong, 수동 GitHub Actions. |
-| **릴리스** | `v0.1.0` 내부 POC, Git tag와 Release 없음. |
+| **릴리스** | `v0.1.0` 내부 POC, [GitHub Release](https://github.com/L0NE-6/QuWork-Daily/releases/tag/v0.1.0) 게시됨. |
 
 ---
 
@@ -248,9 +248,9 @@ QuWork-Daily/
 | 항목 | 현재 값 |
 | :--- | :--- |
 | 스크립트 버전 | `v0.1.0` |
-| 업데이트 | `2026-11-12` |
-| Git tag | 없음 |
-| GitHub Release | 없음 |
+| 스크립트 날짜 | `2026-11-12` |
+| Git tag | [`v0.1.0`](https://github.com/L0NE-6/QuWork-Daily/releases/tag/v0.1.0) |
+| GitHub Release | [`v0.1.0`](https://github.com/L0NE-6/QuWork-Daily/releases/tag/v0.1.0) (2026-11-24) |
 | 프로토콜 상태 | `implemented_unverified` |
 
 실제 계정의 `can_claim=true -> claimed=true` 재조회, 포인트 변화 확인, reset 불변, 실패 상태 회귀 증거, `.quwork_state.json` 제외가 릴리스 조건입니다.

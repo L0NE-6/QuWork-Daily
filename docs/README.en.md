@@ -6,7 +6,7 @@
 
 **Internal QuWork daily-reward POC: inspect status, persist intent, claim, then read back**
 
-> Version: **v0.1.0** (2026-11-12) · Status: `implemented_unverified`
+> Version: **v0.1.0** (script 2026-11-12 · release 2026-11-24) · Status: `implemented_unverified`
 
 [简体中文](../README.md) · **[English](README.en.md)** · [繁體中文](README.zh-Hant.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Português (BR)](README.pt-BR.md)
 
@@ -39,7 +39,7 @@ The protocol state is `implemented_unverified`. Unit tests prove that the state 
 | **Safety** | Persist `confirming` before the first claim; never resubmit after an uncertain result. |
 | **Outputs** | `query`, `done`, `claimed`, `inactive`, `pending`, `failed`. |
 | **Runtime** | Windows, Linux, Qinglong, or a manually configured GitHub Actions workflow. |
-| **Release** | `v0.1.0` internal POC with no Git tag and no GitHub Release. |
+| **Release** | `v0.1.0` internal POC, published as a [GitHub Release](https://github.com/L0NE-6/QuWork-Daily/releases/tag/v0.1.0). |
 
 ---
 
@@ -255,9 +255,9 @@ QuWork-Daily/
 | Item | Current value |
 | :--- | :--- |
 | Script version | `v0.1.0` |
-| Updated | `2026-11-12` |
-| Git tag | None |
-| GitHub Release | None |
+| Script date | `2026-11-12` |
+| Git tag | [`v0.1.0`](https://github.com/L0NE-6/QuWork-Daily/releases/tag/v0.1.0) |
+| GitHub Release | [`v0.1.0`](https://github.com/L0NE-6/QuWork-Daily/releases/tag/v0.1.0) (2026-11-24) |
 | Protocol state | `implemented_unverified` |
 
 Release requires a real account readback from `can_claim=true` to `claimed=true`, a verifiable points change, unchanged `next_refresh_at`, regression evidence for failure states, and a package that excludes `.quwork_state.json`.

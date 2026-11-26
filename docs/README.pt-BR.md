@@ -6,7 +6,7 @@
 
 **POC interno de recompensa diária do QuWork: verificar status, registrar intenção, resgatar e reler**
 
-> Version: **v0.1.0** (2026-11-12) · Status: `implemented_unverified`
+> Version: **v0.1.0** (script 2026-11-12 · release 2026-11-24) · Status: `implemented_unverified`
 
 [简体中文](../README.md) · [English](README.en.md) · [繁體中文](README.zh-Hant.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · **[Português (BR)](README.pt-BR.md)**
 
@@ -39,7 +39,7 @@ O estado do protocolo é `implemented_unverified`. Os testes provam a consistên
 | **Proteção** | Salvar `confirming` antes do primeiro claim e não reenviar em caso incerto. |
 | **Saídas** | `query`, `done`, `claimed`, `inactive`, `pending`, `failed`. |
 | **Execução** | Windows, Linux, Qinglong ou GitHub Actions manual. |
-| **Release** | `v0.1.0`, POC interno sem tag e sem Release. |
+| **Release** | `v0.1.0`, POC interno publicado como [GitHub Release](https://github.com/L0NE-6/QuWork-Daily/releases/tag/v0.1.0). |
 
 ---
 
@@ -248,9 +248,9 @@ QuWork-Daily/
 | Item | Valor atual |
 | :--- | :--- |
 | Versão do script | `v0.1.0` |
-| Atualização | `2026-11-12` |
-| Git tag | Nenhuma |
-| GitHub Release | Nenhum |
+| Data do script | `2026-11-12` |
+| Git tag | [`v0.1.0`](https://github.com/L0NE-6/QuWork-Daily/releases/tag/v0.1.0) |
+| GitHub Release | [`v0.1.0`](https://github.com/L0NE-6/QuWork-Daily/releases/tag/v0.1.0) (2026-11-24) |
 | Estado do protocolo | `implemented_unverified` |
 
 O release exige releitura real de `can_claim=true` para `claimed=true`, mudança de pontos verificável, `next_refresh_at` inalterado, evidência de regressão para falhas e pacote sem `.quwork_state.json`.

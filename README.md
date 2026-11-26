@@ -6,7 +6,7 @@
 
 **QuWork 每日奖励内部 POC：先查状态、写前落账、领取后回读**
 
-> 当前版本：**v0.1.0**（2026-11-12） · 认证方式：Bearer accessToken
+> 当前版本：**v0.1.0**（脚本 2026-11-12 · Release 2026-11-24） · 认证方式：Bearer accessToken
 
 **[简体中文](README.md)** · [English](docs/README.en.md) · [繁體中文](docs/README.zh-Hant.md) · [日本語](docs/README.ja.md) · [한국어](docs/README.ko.md) · [Português (BR)](docs/README.pt-BR.md)
 
@@ -45,7 +45,7 @@
 | **核心保护** | 提交前写入 `confirming` 台账，结果不明时下一轮只回查。 |
 | **输出** | `query`、`done`、`claimed`、`inactive`、`pending`、`failed`。 |
 | **部署** | Windows / Linux / 青龙 / 手工 GitHub Actions。 |
-| **发布状态** | `v0.1.0` 内部 POC，无 Git tag、无 Release。 |
+| **发布状态** | `v0.1.0` 内部 POC，已发布 [GitHub Release](https://github.com/L0NE-6/QuWork-Daily/releases/tag/v0.1.0)。 |
 
 ---
 
@@ -336,9 +336,9 @@ QuWork-Daily/
 | 项目 | 当前值 |
 | :--- | :--- |
 | 脚本版本 | `v0.1.0` |
-| 更新日期 | `2026-11-12` |
-| Git tag | 无 |
-| GitHub Release | 无 |
+| 脚本日期 | `2026-11-12` |
+| Git tag | [`v0.1.0`](https://github.com/L0NE-6/QuWork-Daily/releases/tag/v0.1.0) |
+| GitHub Release | [`v0.1.0`](https://github.com/L0NE-6/QuWork-Daily/releases/tag/v0.1.0)（2026-11-24） |
 | 协议状态 | `implemented_unverified` |
 
 发布门槛：
@@ -356,7 +356,7 @@ QuWork-Daily/
 
 本项目用于账号持有人维护自己的每日奖励。使用前应自行确认账号、服务条款与所在地规则。作者不对账号限制、积分变化、接口调整、网络失败或第三方部署造成的损失作出保证。
 
-仓库没有公开 Release 与 Git tag，任何以“官方稳定版”“内部付费版”名义收费的渠道均不可信。
+公开 Release 仅以本仓库的 [Releases](https://github.com/L0NE-6/QuWork-Daily/releases) 页面为准；任何以“官方稳定版”“内部付费版”名义收费的渠道均不可信。
 
 ---
 

@@ -6,7 +6,7 @@
 
 **QuWork 每日獎勵內部 POC：先查狀態、寫入確認台帳、領取後回讀**
 
-> Version: **v0.1.0** (2026-11-12) · Status: `implemented_unverified`
+> Version: **v0.1.0**（腳本 2026-11-12 · Release 2026-11-24） · Status: `implemented_unverified`
 
 [简体中文](../README.md) · [English](README.en.md) · **[繁體中文](README.zh-Hant.md)** · [日本語](README.ja.md) · [한국어](README.ko.md) · [Português (BR)](README.pt-BR.md)
 
@@ -39,7 +39,7 @@ QuWork Daily 是帳號持有人維護自身每日獎勵的內部 POC。倉庫與
 | **保護** | 首次 claim 前寫入 `confirming`，結果不明時不重複提交。 |
 | **輸出** | `query`、`done`、`claimed`、`inactive`、`pending`、`failed`。 |
 | **執行** | Windows、Linux、青龍或手工設定的 GitHub Actions。 |
-| **發布** | `v0.1.0` 內部 POC，無 Git tag、無 Release。 |
+| **發布** | `v0.1.0` 內部 POC，已發布 [GitHub Release](https://github.com/L0NE-6/QuWork-Daily/releases/tag/v0.1.0)。 |
 
 ---
 
@@ -248,9 +248,9 @@ QuWork-Daily/
 | 項目 | 目前值 |
 | :--- | :--- |
 | 腳本版本 | `v0.1.0` |
-| 更新日期 | `2026-11-12` |
-| Git tag | 無 |
-| GitHub Release | 無 |
+| 腳本日期 | `2026-11-12` |
+| Git tag | [`v0.1.0`](https://github.com/L0NE-6/QuWork-Daily/releases/tag/v0.1.0) |
+| GitHub Release | [`v0.1.0`](https://github.com/L0NE-6/QuWork-Daily/releases/tag/v0.1.0)（2026-11-24） |
 | 協議狀態 | `implemented_unverified` |
 
 發布門檻為真實帳號完成 `can_claim=true -> claimed=true` 回讀、積分變化可核對、reset 時間不變、失敗狀態有回歸證據，且發布包不含 `.quwork_state.json`。
